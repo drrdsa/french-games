@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+/* Classroom Object Game Styles */
+#item-display { /* Container for image and English name */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Image and name vertically */
+    align-items: center; /* Center horizontally */
+    margin-bottom: 1rem;
+}
+
+#item-display img {
+    max-width: 200px; /* Adjust as needed */
+    max-height: 200px; /* Adjust as needed */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Or cover */
+    display: block;
+    margin-bottom: 0.5rem; /* Space between image and name */
+}
+
+#item-display p#english-name { /* Style for the English name */
+    font-style: italic;
+    color: #555; /* Slightly darker gray */
+}
+
+
+
+/* General Game Styles (Can be used for other games too) */
+#options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#options button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff; /* Consistent button color */
+    color: white; /* Consistent button text color */
+}
+
+#feedback {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+#score {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Add hover effect to buttons */
+button:hover, #options button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the "See Answers" button */
+#answers-button {
+    background-color: #6c757d; /* Gray color */
+}
+
+#answers-button:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Style for the "Quit" button */
+#quit-button {
+    background-color: #dc3545; /* Red color */
+}
+
+#quit-button:hover {
+    background-color: #c12a36; /* Darker red on hover */
+}
